@@ -1,0 +1,6 @@
+.env
+staticfiles/
+media/
+logs/
+*.pyc
+.python-version
