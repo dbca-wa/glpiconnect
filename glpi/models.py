@@ -6635,7 +6635,10 @@ class GlpiUsers(models.Model):
     class Meta:
         managed = False
         db_table = 'glpi_users'
-        unique_together = (('name', 'authtype', 'auths_id'),)
+        unique_together = ('name', 'authtype', 'auths_id')
+
+    def __str__(self):
+        return self.name
 
 
 class GlpiUsertitles(models.Model):
