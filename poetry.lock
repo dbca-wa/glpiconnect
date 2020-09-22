@@ -53,6 +53,17 @@ version = "0.5.0"
 
 [[package]]
 category = "main"
+description = "Serve production static files with Django."
+name = "dj-static"
+optional = false
+python-versions = "*"
+version = "0.0.6"
+
+[package.dependencies]
+static3 = "*"
+
+[[package]]
+category = "main"
 description = "A high-level Python Web framework that encourages rapid development and clean, pragmatic design."
 name = "django"
 optional = false
@@ -240,6 +251,18 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "0.3.1"
 
 [[package]]
+category = "main"
+description = "A really simple WSGI way to serve static (or mixed) content."
+name = "static3"
+optional = false
+python-versions = "*"
+version = "0.7.0"
+
+[package.extras]
+GenshiMagic = ["genshi"]
+KidMagic = ["kid"]
+
+[[package]]
 category = "dev"
 description = "Traitlets Python configuration system"
 name = "traitlets"
@@ -262,7 +285,7 @@ python-versions = "*"
 version = "0.2.5"
 
 [metadata]
-content-hash = "f555774d025371392a872a2f53e5b7d925ec61cd31fe685a531d9622a233c91c"
+content-hash = "5ded04cd19c41c04187d4ec259dbe5c68cb4fd13769bdd887e581da3e0e70260"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -289,6 +312,9 @@ decorator = [
 dj-database-url = [
     {file = "dj-database-url-0.5.0.tar.gz", hash = "sha256:4aeaeb1f573c74835b0686a2b46b85990571159ffc21aa57ecd4d1e1cb334163"},
     {file = "dj_database_url-0.5.0-py2.py3-none-any.whl", hash = "sha256:851785365761ebe4994a921b433062309eb882fedd318e1b0fcecc607ed02da9"},
+]
+dj-static = [
+    {file = "dj-static-0.0.6.tar.gz", hash = "sha256:032ec1c532617922e6e3e956d504a6fb1acce4fc1c7c94612d0fda21828ce8ef"},
 ]
 django = [
     {file = "Django-3.0.7-py3-none-any.whl", hash = "sha256:e1630333248c9b3d4e38f02093a26f1e07b271ca896d73097457996e0fae12e8"},
@@ -355,6 +381,9 @@ pytz = [
 sqlparse = [
     {file = "sqlparse-0.3.1-py2.py3-none-any.whl", hash = "sha256:022fb9c87b524d1f7862b3037e541f68597a730a8843245c349fc93e1643dc4e"},
     {file = "sqlparse-0.3.1.tar.gz", hash = "sha256:e162203737712307dfe78860cc56c8da8a852ab2ee33750e33aeadf38d12c548"},
+]
+static3 = [
+    {file = "static3-0.7.0.tar.gz", hash = "sha256:674641c64bc75507af2eb20bef7e7e3593dca993dec6674be108fa15b42f47c8"},
 ]
 traitlets = [
     {file = "traitlets-5.0.4-py3-none-any.whl", hash = "sha256:9664ec0c526e48e7b47b7d14cd6b252efa03e0129011de0a9c1d70315d4309c3"},
